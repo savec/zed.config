@@ -1,0 +1,119 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "EmptyPane",
+    "bindings": {
+      "ctrl-z": "workspace::ToggleZoom",
+      "space t h": "workspace::ToggleLeftDock",
+      "space t l": "workspace::ToggleRightDock",
+      "space t j": "workspace::ToggleBottomDock",
+      "space t z": "workspace::ToggleCenteredLayout",
+      "space s f": "file_finder::Toggle",
+      "space s w": "workspace::NewSearch",
+      "space \\": "terminal_panel::ToggleFocus",
+      "space e": "project_panel::ToggleFocus",
+      "space o": "outline_panel::ToggleFocus",
+      "space g": "git_panel::ToggleFocus",
+      "space w s": "project_symbols::Toggle"
+    }
+  },
+  {
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView || DebugPanel || Terminal",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Editor && VimControl && !menu",
+    "bindings": {
+      "ctrl-z": "workspace::ToggleZoom",
+      "space t b": "git::Blame",
+      "space t h": "workspace::ToggleLeftDock",
+      "space t l": "workspace::ToggleRightDock",
+      "space t j": "workspace::ToggleBottomDock",
+      "space t z": "workspace::ToggleCenteredLayout",
+      "space t i": "editor::ToggleInlayHints",
+      "space c f": "editor::Format",
+      "space c a": "editor::ToggleCodeActions",
+      "space space": "tab_switcher::Toggle",
+      "space s f": "file_finder::Toggle",
+      "space s w": "workspace::NewSearch",
+      "space \\": "terminal_panel::ToggleFocus",
+      "space e": "project_panel::ToggleFocus",
+      "space o": "outline_panel::ToggleFocus",
+      "space g": "git_panel::ToggleFocus",
+      "space d s": "outline::Toggle",
+      "space w s": "project_symbols::Toggle",
+      "space c r": "editor::Rename",
+      "g d": "editor::GoToDefinition",
+      "g D": "editor::GoToDefinitionSplit",
+      "g i": "editor::GoToImplementation",
+      "g I": "editor::GoToImplementationSplit",
+      "g t": "editor::GoToTypeDefinition",
+      "g T": "editor::GoToTypeDefinitionSplit",
+      "g r": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-k": "editor::ContextMenuPrevious",
+      "ctrl-j": "editor::ContextMenuNext"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimObject",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    // tab switcher
+    "context": "TabSwitcher > Picker",
+    "bindings": {
+      "k": "menu::SelectPrevious",
+      "j": "menu::SelectNext",
+      "x": "tab_switcher::CloseSelectedItem",
+      "ctrl-k": "menu::SelectPrevious",
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-x": "tab_switcher::CloseSelectedItem"
+    }
+  },
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "s": ["vim::PushSneak", {}],
+      "S": ["vim::PushSneakBackward", {}]
+    }
+  },
+  {
+    // command palette
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-k": "menu::SelectPrevious",
+      "ctrl-j": "menu::SelectNext"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-z": "workspace::ToggleZoom"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-t": "workspace::NewTerminal"
+    }
+  }
+]

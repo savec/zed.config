@@ -1,0 +1,105 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+{
+  "agent": {
+    "button": false,
+    "dock": "left",
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "version": "2"
+  },
+  "vim_mode": true,
+  "vim": {
+    "enable_vim_sneak": true
+  },
+  "ui_font_size": 13,
+  "buffer_font_family": "NotoSansM Nerd Font Mono",
+  "buffer_font_size": 12,
+  "relative_line_numbers": true,
+  "vertical_scroll_margin": 4,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Nordfox"
+  },
+  "tab_bar": {
+    // Whether or not to show the tab bar in the editor
+    "show": false
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false
+  },
+  "title_bar": {
+    // Whether to show the branch icon beside branch switcher in the titlebar.
+    "show_branch_icon": true
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 500
+    }
+  },
+  // Finder model width
+  "file_finder": {
+    "modal_width": "medium"
+  },
+  // Indentation, rainbow indentation
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  // Inlay hints
+  "inlay_hints": {
+    "enabled": true
+  },
+  // Use zed commit editor
+  "terminal": {
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "button": false,
+    "dock": "left"
+  },
+  // Turn off telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  // Panels
+  "project_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "outline_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "git_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  // Move some unnecessary panels to the left
+  "notification_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "chat_panel": {
+    "button": "never",
+    "dock": "left"
+  }
+}

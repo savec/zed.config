@@ -36,6 +36,8 @@
   {
     "context": "Editor && VimControl && !menu",
     "bindings": {
+      "ctrl-n": null,
+      "ctrl-p": null,
       "space t b": "git::Blame",
       "space t i": "editor::ToggleInlayHints",
       "space c f": "editor::Format",

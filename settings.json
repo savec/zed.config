@@ -9,7 +9,7 @@
 {
   "agent": {
     "button": false,
-    "dock": "left",
+    "dock": "right",
     "default_model": {
       "provider": "openai",
       "model": "gpt-4o-mini"
@@ -58,7 +58,7 @@
   // Indentation, rainbow indentation
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "fixed"
   },
   // Inlay hints
   "inlay_hints": {

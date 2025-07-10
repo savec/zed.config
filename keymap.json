@@ -21,11 +21,12 @@
       "space o": "outline_panel::ToggleFocus",
       "space g": "git_panel::ToggleFocus",
       "space a": "agent::ToggleFocus",
-      "space w s": "project_symbols::Toggle"
+      "space w s": "project_symbols::Toggle",
+      "space d d": "diagnostics::Deploy"
     }
   },
   {
-    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView || DebugPanel || Terminal || AgentPanel",
+    "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView || DebugPanel || Terminal || AgentPanel || DebugPanel",
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
@@ -40,6 +41,7 @@
       "ctrl-p": null,
       "space t b": "git::Blame",
       "space t i": "editor::ToggleInlayHints",
+      "space t d": "editor::ToggleDiagnostics",
       "space c f": "editor::Format",
       "space c a": "editor::ToggleCodeActions",
       "space space": "tab_switcher::Toggle",

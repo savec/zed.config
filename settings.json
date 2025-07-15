@@ -14,7 +14,6 @@
       "provider": "openai",
       "model": "gpt-4o-mini"
     },
-    "version": "2"
   },
   "vim_mode": true,
   "vim": {

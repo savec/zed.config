@@ -7,7 +7,7 @@
 // from the command palette.
 [
   {
-    "context": "EmptyPane || (Editor && VimControl && !menu)",
+    "context": "MarkdownPreview || EmptyPane || (Editor && VimControl && !menu)",
     "bindings": {
       "ctrl-z": "workspace::ToggleZoom",
       "space t h": "workspace::ToggleLeftDock",
@@ -35,7 +35,7 @@
     }
   },
   {
-    "context": "Editor && VimControl && !menu",
+    "context": "MarkdownPreview || (Editor && VimControl && !menu)",
     "bindings": {
       "ctrl-n": null,
       "ctrl-p": null,
@@ -87,6 +87,13 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-t": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "FileFinder || (FileFinder > Picker > Editor)",
+    "bindings": {
+      "ctrl-p": "menu::SelectPrevious",
+      "ctrl-n": "menu::SelectNext"
     }
   }
 ]

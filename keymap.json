@@ -86,6 +86,8 @@
   {
     "context": "Terminal",
     "bindings": {
+      "ctrl-n": null,
+      "ctrl-p": null,
       "ctrl-t": "workspace::NewTerminal"
     }
   },

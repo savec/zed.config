@@ -22,7 +22,6 @@
   },
   "vim_mode": true,
   "ui_font_size": 16,
-  "agent_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_family": "NotoSansM Nerd Font Mono",
   "relative_line_numbers": true,
@@ -96,10 +95,6 @@
   // Move some unnecessary panels to the left
   "notification_panel": {
     "button": false,
-    "dock": "left"
-  },
-  "chat_panel": {
-    "button": "never",
     "dock": "left"
   },
   "debugger": {

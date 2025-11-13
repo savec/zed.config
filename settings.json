@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": false
+  },
+  "active_pane_modifiers": {},
   "agent": {
     "inline_assistant_model": {
       "provider": "anthropic",
@@ -24,7 +29,7 @@
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_family": "NotoSansM Nerd Font Mono",
-  "relative_line_numbers": true,
+  "relative_line_numbers": "wrapped",
   "vertical_scroll_margin": 4,
   "theme": {
     "mode": "system",

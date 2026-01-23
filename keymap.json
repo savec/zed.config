@@ -22,8 +22,8 @@
       "space g": "git_panel::ToggleFocus",
       "space a": "agent::ToggleFocus",
       "space w s": "project_symbols::Toggle",
-      "space d d": "diagnostics::Deploy"
-    }
+      "space d d": "diagnostics::Deploy",
+    },
   },
   {
     "context": "GitPanel || ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView || Terminal || AgentPanel || DebugPanel",
@@ -31,8 +31,8 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   {
     "context": "MarkdownPreview || (Editor && VimControl && !menu)",
@@ -53,49 +53,56 @@
       "g I": "editor::GoToImplementationSplit",
       "g t": "editor::GoToTypeDefinition",
       "g T": "editor::GoToTypeDefinitionSplit",
-      "g r": "editor::FindAllReferences"
-    }
+      "g r": "editor::FindAllReferences",
+    },
   },
   {
     "context": "Editor && vim_mode == visual && !VimObject",
     "bindings": {
       "shift-j": "editor::MoveLineDown",
-      "shift-k": "editor::MoveLineUp"
-    }
+      "shift-k": "editor::MoveLineUp",
+    },
   },
   {
     // tab switcher
     "context": "TabSwitcher > Picker",
     "bindings": {
-      "ctrl-x": "tab_switcher::CloseSelectedItem"
-    }
+      "ctrl-x": "tab_switcher::CloseSelectedItem",
+    },
   },
   {
     "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
-      "s": ["vim::PushSneak", {}],
-      "S": ["vim::PushSneakBackward", {}]
-    }
+      "s": "vim::PushSneak",
+      "S": "vim::PushSneakBackward",
+    },
   },
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-z": "workspace::ToggleZoom"
-    }
+      "ctrl-z": "workspace::ToggleZoom",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
       "ctrl-n": null,
       "ctrl-p": null,
-      "ctrl-t": "workspace::NewTerminal"
-    }
+      "ctrl-t": "workspace::NewTerminal",
+    },
   },
   {
     "context": "FileFinder || (FileFinder > Picker > Editor)",
     "bindings": {
       "ctrl-p": "menu::SelectPrevious",
-      "ctrl-n": "menu::SelectNext"
-    }
-  }
+      "ctrl-n": "menu::SelectNext",
+    },
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "*": "vim::SearchUnderCursor",
+      "#": "vim::SearchUnderCursorPrevious",
+    },
+  },
 ]

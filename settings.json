@@ -7,24 +7,38 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "default",
+      },
+      "type": "registry",
+    },
+  },
   "colorize_brackets": true,
   "preview_tabs": {
     "enabled": true,
-    "enable_preview_from_file_finder": false
+    "enable_preview_from_file_finder": false,
   },
   "active_pane_modifiers": {},
   "agent": {
     "inline_assistant_model": {
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-thinking-latest"
+      "model": "claude-sonnet-4-5-thinking-latest",
     },
     "use_modifier_to_send": true,
     "button": false,
-    "dock": "right",
+    "dock": "left",
     "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
       "provider": "anthropic",
-      "model": "claude-sonnet-4-5-thinking-latest"
-    }
+      "model": "claude-sonnet-4-6",
+    },
+    "commit_message_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6-latest",
+    },
   },
   "vim_mode": true,
   "ui_font_size": 16,
@@ -35,80 +49,77 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Nordfox - opaque"
+    "dark": "Catppuccin Macchiato - No Italics",
   },
   "tab_bar": {
     // Whether or not to show the tab bar in the editor
-    "show": false
+    "show": false,
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "toolbar": {
     "breadcrumbs": true,
-    "quick_actions": false
+    "quick_actions": false,
   },
   "title_bar": {
     // Whether to show the branch icon beside branch switcher in the titlebar.
-    "show_branch_icon": true
+    "show_branch_status_icon": true,
   },
   "git": {
     "inline_blame": {
       "enabled": true,
-      "delay_ms": 500
-    }
+      "delay_ms": 500,
+    },
   },
   // Indentation, rainbow indentation
   "indent_guides": {
     "enabled": true,
-    "coloring": "fixed"
+    "coloring": "fixed",
   },
   // Inlay hints
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
   },
   // Use zed commit editor
   "terminal": {
     "blinking": "terminal_controlled",
     "copy_on_select": true,
     "button": false,
-    "dock": "left"
+    "dock": "left",
   },
   // Turn off telemetry
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   // Panels
   "project_panel": {
     "entry_spacing": "comfortable",
     "button": false,
-    "dock": "right"
+    "dock": "right",
   },
   "outline_panel": {
     "button": false,
-    "dock": "right"
+    "dock": "right",
   },
   "git_panel": {
+    "tree_view": false,
     "button": false,
-    "dock": "right"
+    "dock": "right",
   },
   "collaboration_panel": {
     "button": false,
-    "dock": "left"
-  },
-  // Move some unnecessary panels to the left
-  "notification_panel": {
-    "button": false,
-    "dock": "left"
+    "dock": "right",
   },
   "debugger": {
-    "log_dap_communications": true
+    "log_dap_communications": true,
   },
   "dap": {
     "CodeLLDB": {
       "binary": "lldb-dap",
-      "args": []
-    }
-  }
+      "args": [],
+    },
+  },
+  "semantic_tokens": "combined",
 }

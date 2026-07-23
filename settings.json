@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "diff_view_style": "split",
   "icon_theme": "Catppuccin Macchiato",
   "agent_servers": {
     "claude-acp": {
@@ -123,4 +124,5 @@
     },
   },
   "semantic_tokens": "combined",
+  "format_on_save": "off",
 }

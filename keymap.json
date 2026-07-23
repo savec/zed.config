@@ -105,4 +105,28 @@
       "#": "vim::SearchUnderCursorPrevious",
     },
   },
+  {
+    "context": "MarkdownPreview",
+    "bindings": {
+      "k": "markdown::ScrollUp"
+    }
+  },
+  {
+    "context": "MarkdownPreview",
+    "bindings": {
+      "j": "markdown::ScrollDown"
+    }
+  },
+  {
+    "context": "MarkdownPreview",
+    "bindings": {
+      "ctrl-p": "markdown::ScrollUpByItem"
+    }
+  },
+  {
+    "context": "MarkdownPreview",
+    "bindings": {
+      "ctrl-n": "markdown::ScrollDownByItem"
+    }
+  }
 ]
